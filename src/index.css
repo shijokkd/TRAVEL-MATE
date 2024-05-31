@@ -3,3 +3,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  button {
+    @apply border border-black rounded-xl px-5 py-1;
+  }
+
+  .label1 {
+    @apply text-sm md:text-2xl ;
+  }
+  .input1{
+    @apply text-center border-2 h-9  border-black md:text-xl md:w-[60]
+  }
+}
+
+  
