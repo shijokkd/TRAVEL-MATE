@@ -17,7 +17,7 @@ function TreavelsLogin() {
           <div className=" h-[80%] md:h-full w-1/2 border-black border bg-white shadow-2xl  rounded-3xl md:rounded-l-none flex flex-col justify-center items-center  ">
             <form  onSubmit={handleSubmit(onsubmit)}
               className=" flex flex-col items-center justify-center w-full h-[90%] gap-2">
-              <h1 className=" text-xl mb-6 md:text-4xl  ">
+              <h1 className=" text-xl mb-6 md:text-4xl text-blue-600 font-serif  ">
                 <u> TRAVELS LOGIN </u>
               </h1>
               <label htmlFor="" className="label1  ">
@@ -46,10 +46,10 @@ function TreavelsLogin() {
               
 
 
-              <button type="submit">LOGIN</button>
+              <button type="submit" className=" bg-blue-400 *:first-letter:"      >LOGIN</button>
               <br />
             </form>
-              <button className=""><Link to={"/travelssignup"} >TRAVELS SIGNUP</Link></button>
+              <button className="  bg-blue-400"><Link to={"/travelssignup"} >TRAVELS SIGNUP</Link></button>
           </div>
         </div>
       </div>
