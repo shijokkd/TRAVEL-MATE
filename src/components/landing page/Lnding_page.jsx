@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function LandingPage() {
   return (
     <div
-      style={{ backgroundImage: `url(${pic})` }}
+      style={{ backgroundImage: `url(${pic})` }}  
       className="h-screen w-screen bg-blue-200 bg-cover bg-no-repeat bg-center   "
     >
       <div className=" h-full w-full flex flex-col ">

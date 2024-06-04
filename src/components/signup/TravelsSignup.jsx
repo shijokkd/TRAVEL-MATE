@@ -87,10 +87,10 @@ function TravelsSignup() {
                 {errors.confirmpassword && <span className="text-red-500">{errors.confirmpassword.message}</span>}
 
 
-                <button type="submit" className=" bg-blue-400">LOGIN</button>
+                <button type="submit" className=" button1 bg-blue-400 ">LOGIN</button>
                 <br />
               </form>
-                <button className="  bg-blue-400"><Link to={"/travelslogin"}>BACK TO LOGIN</Link></button>
+                <button className=" button1 bg-blue-400"><Link to={"/travelslogin"}>BACK TO LOGIN</Link></button>
             </div>
             <div className=" bg-slate-600   h-full md:w-1/2 rounded-r-3xl  "></div>
 

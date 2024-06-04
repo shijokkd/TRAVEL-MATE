@@ -46,10 +46,10 @@ function TreavelsLogin() {
               
 
 
-              <button type="submit" className=" bg-blue-400 *:first-letter:"      >LOGIN</button>
+              <button type="submit" className=" button1 bg-blue-400 *:first-letter:"      >LOGIN</button>
               <br />
             </form>
-              <button className="  bg-blue-400"><Link to={"/travelssignup"} >TRAVELS SIGNUP</Link></button>
+              <button className=" button1 bg-blue-400"><Link to={"/travelssignup"} >TRAVELS SIGNUP</Link></button>
           </div>
         </div>
       </div>
