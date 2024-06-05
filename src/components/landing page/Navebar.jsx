@@ -7,7 +7,7 @@ import { useState } from "react";
 
 function Navebar() {
 
-  const [nav ,setNav]=useState(false)
+  const [nav ,setNav]=useState(true)
   return (
     <div className=" h-9 w-full bg-sky-100 md:h-16 flex items-center justify-between  ">
       <div className=" w-[40%] lg:w-[30%] h-full flex items-center  ">
