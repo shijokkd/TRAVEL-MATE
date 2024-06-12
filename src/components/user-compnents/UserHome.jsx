@@ -7,8 +7,8 @@ function UserHome() {
   return (
     <>
     <Navebar/>
-     <Home/>
-      <Footer/>
+    <Home/>
+    <Footer/>
     </>
   );
 }

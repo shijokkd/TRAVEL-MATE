@@ -7,7 +7,7 @@ import logo from "../../assets/images/logo.png";
 
 function Footer() {
   return (
-    <div className="w-screen  bg-slate-800 py-10  flex justify-center flex-col items-center gap-7">
+    <div className="bg-slate-800 py-10  flex justify-center flex-col items-center gap-7 ">
       <div className=" w-[80%] h-auto flex flex-wrap justify-center items-center gap-2 ">
         <div className=" w-[400px] h-[400px]  flex py-12 items-center flex-col gap-12 text-left">
           <h1 className=" text-3xl flex font-serif gap-4 text-white"> <img src={logo} alt="" className=" h-8 w-8 bg-white rounded " /> TRAVEL MATE</h1>
