@@ -5,7 +5,7 @@ const { Meta } = Card;
 
 function Vehicles() {
   return (
-    <div className=" w-[90%]  h-[400px] mt-6  md:h-[350px] flex items-center   shadow-[0px_0px_10px_0px_rba(0,0,0,0.3)]   ">
+    <div className=" w-[90%]  h-[400px] mt-6  md:h-[500px] flex items-center   shadow-[0px_0px_10px_0px_rba(0,0,0,0.3)]   ">
         <marquee
     behavior="scroll"
     direction="right"

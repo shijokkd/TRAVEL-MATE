@@ -18,7 +18,7 @@ function UserSignup() {
       className="h-screen w-full bg-cover bg-center">
 
       <div className="w-full h-full flex justify-center lg:flex-row items-center flex-col gap-5">
-        <h1 className="font-IBM tracking-wider md:text-5xl text-2xl lg:text-6xl font-bold text-blue-100 mix-blend-overlay">
+        <h1 className="font-IBM tracking-wider md:text-5xl text-2xl lg:text-6xl font-bold text-blue-100 mix-blend-hard-light">
           Life Long <br /> 'Memories' <br /> Just A Few <br /> Seconds Away
         </h1>
         <div className="border-2 shadow-2xl md:w-[35%] shadow-blue-700 h-auto lg:w-[40%] lg:h-[80%] rounded-3xl w-[70%] backdrop-blur-sm flex   flex-col justify-center items-center lg:gap-5">

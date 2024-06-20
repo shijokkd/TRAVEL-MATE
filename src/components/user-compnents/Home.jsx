@@ -52,11 +52,12 @@ function Home() {
         </div>
       </div>
       {/* ////////////////// */}
-
+      
+      
+      
       <div
-        className=" lg:h-[130vh]  w-full  bg-sky-100 bg-contain md:bg-no-repeat flex justify-evenly flex-wrap "
-        style={{ backgroundImage: `url(${img2})` }}
-      >
+        className=" lg:h-[120vh]  w-full  bg-sky-100 bg-contain md:bg-no-repeat flex justify-evenly flex-wrap "
+        style={{ backgroundImage: `url(${img2})` }}>
         <div className=" md:h-[300px] h-[250px] md:w-[300px] w-[250px] mt-4 rounded-3xl lg:mt-[150px] bg-yellow-400 flex flex-col justify-center items-center gap-5 text-left ">
           <h1 className=" md:text-4xl text-2xl font-serif font-bold">
             Explore
@@ -66,7 +67,7 @@ function Home() {
             drive, RV journey and everything in between. Then enjoy the ride
             while uncovering hidden gems along the way.
           </p>
-        </div>
+        </div>  
         <div className=" md:h-[300px] h-[250px] md:w-[300px] mt-4 w-[250px] rounded-3xl  bg-yellow-400 flex flex-col justify-center items-center gap-5 text-left ">
           <h1 className=" md:text-4xl text-2xl font-serif font-bold">Prep</h1>
           <p className=" md:text-xl pl-5">
@@ -89,11 +90,18 @@ function Home() {
             Let Travel Mate be your guide, navigating the twists and turns as
             you roam the open roads with confidence and ease.
           </p>
+          
         </div>
+              
+      
       </div>
+      
+      
+    
       {/* ////////////////////////// */}
-
-      <div className=" w-full h-[55vh] md:h-[50vh] bg-gradient-to-t from-rose-100  to-sky-100 bg-no-repeat bg-cover bg-center align-bottom flex justify-center  ">
+         
+      <div className=" w-full h-[55vh] md:h-[55vh] bg-gradient-to-t from-rose-100  to-sky-100 bg-no-repeat bg-cover bg-center align-bottom flex justify-center  ">
+        
         <div
           className=" w-full h-full bg-contain animate-cloud bg-no-repeat absolute   "
           style={{ backgroundImage: `url(${cloud1})` }}

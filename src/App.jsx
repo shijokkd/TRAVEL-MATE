@@ -1,35 +1,32 @@
-import './App.css'
-import LandingPage from './components/landing page/Lnding_page'
-import { Routes,Route } from 'react-router-dom'
-import NotFound from './components/not found/NotFound'
-import UserLogin from './components/login/UserLogin'
-import UserSignup from './components/signup/UserSignup'
-import TreavelsLogin from './components/login/TreavelsLogin'
-import TravelsSignup from './components/signup/TravelsSignup'
-import UserHome from './components/user-compnents/UserHome'
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import UserRouter from './router/UserRouter'
+import TreavelsLogin from "./pages/agent/TreavelsLogin";
+import TravelsSignup from "./pages/agent/TravelsSignup";
+import UserSignup from "./pages/user/UserSignup";
+import Userlogin from "./pages/user/UserLogin";
+import Landingpage  from "./pages/others/Lnding_page";
+import TNavebar from "./components/travels-components/TNavebar";
 
 
 
 function App() {
-
   return (
-  <>
-  <Routes>
-    
-    <Route path='/' element={<LandingPage/>}/>
-    <Route path='/userlogin' element={<UserLogin/>}/>
-    <Route path='/travelslogin' element={<TreavelsLogin/>}/>
-    <Route path='/usersignup' element={<UserSignup/>}/>
-    <Route path='/travelssignup' element={<TravelsSignup/>}/>
-    <Route path='/userhome' element={<UserHome/>}/>
-    
-    
-    <Route path='*' element={<NotFound/>}/>
+    <>
+      <Routes>
+        
+        <Route path="/" element={<Landingpage/>} />   
+        <Route path="/travelslogin" element={<TreavelsLogin />} />
+        <Route path="/travelssignup" element={<TravelsSignup />} />
+        <Route path="/usersignup" element={<UserSignup />} />
+        <Route path="/userlogin" element={<Userlogin />} />
+        <Route path="/*" element={<UserRouter/>} />
+        <Route path="/nav" element={<TNavebar />} />
 
 
-  </Routes>
-  </>
-  )
+      </Routes>
+    </>
+  );
 }
 
-export default App
+export default App;
