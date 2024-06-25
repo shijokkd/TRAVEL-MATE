@@ -7,6 +7,8 @@ import UserSignup from "./pages/user/UserSignup";
 import Userlogin from "./pages/user/UserLogin";
 import Landingpage  from "./pages/others/Lnding_page";
 import TNavebar from "./components/travels-components/TNavebar";
+import TravelHome from "./pages/agent/TravelHome";
+
 
 
 
@@ -21,7 +23,7 @@ function App() {
         <Route path="/usersignup" element={<UserSignup />} />
         <Route path="/userlogin" element={<Userlogin />} />
         <Route path="/*" element={<UserRouter/>} />
-        <Route path="/nav" element={<TNavebar />} />
+        <Route path="/travelhome" element={<TravelHome />} />
 
 
       </Routes>

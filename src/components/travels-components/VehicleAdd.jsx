@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 import { FaWindowClose } from "react-icons/fa";
 import THome from "./THome";
+import Button from "../others/Button";
 
 function VehicleAdd() {
     const [page,setPage]=useState(true)
   return (
     <>
      {page? <div className=" h-screen w-full  flex justify-center items-center relative ">
-        <button className=" absolute top-[3%] right-[2%] active:scale-110 md:hover:scale-110 " onClick={()=>setPage(false)}>
-          <FaWindowClose size={30} />
-        </button>
-        <div className=" h-[80%] w-[80%] bg-slate-100 flex items-center justify-center relative">
+      <Button className=" absolute top-[3%] md:right-[16%] right-[10%] active:scale-110 md:hover:scale-110 " onClick={()=>setPage(false)}  content={ <FaWindowClose className="text-4xl md:text-6xl" />} />
+         
+        
+        <div className=" h-[80%] w-[55%] bg-slate-100 flex flex-col  items-center justify-center relative">
           <form className="w-full max-w-lg">
+          <center><h1 className="md:mb-8 md:text-4xl font-TITAN text-2xl ">VEHICLES ADD</h1></center>
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
@@ -117,6 +119,21 @@ function VehicleAdd() {
                 />
               </div>
             </div>
+            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  for="grid-first-name"
+                >
+                  name
+                </label>
+                <input
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline focus:bg-white"
+                  id="grid-first-name"
+                  type="file"
+                  placeholder="name"
+                />
+                {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
+              </div>
             <button
               type="submit"
               class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded lg:w-[100%]"
