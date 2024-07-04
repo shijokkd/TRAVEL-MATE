@@ -1,11 +1,19 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import axiosInstance from "../../components/axiosInstance/AxiosInstance";
 
 function TreavelsLogin() {
   const {register ,  handleSubmit , formState:{errors}}= useForm()
-  const onsubmit =(data)=>{
-      console.log(data);
+  const onsubmit = async (data)=>{
+    try{
+      await axiosInstance.post("/userlogin",data)
+
+    }catch(error){
+      console.log(error);
+    }
+
+      
   }
 
 

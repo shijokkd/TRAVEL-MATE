@@ -1,9 +1,11 @@
 import React from "react";
 import pic from "../../assets/images/2.webp";
 import logo from "../../assets/images/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 function LandingPage() {
+  const Navigate = useNavigate()
   return (
     <div
       style={{ backgroundImage: `url(${pic})` }}  
@@ -35,11 +37,11 @@ function LandingPage() {
           </p>
           <div className=" w-[50%] h-[15%]   flex justify-center items-center  gap-20">
             <button className=" lg:h-[55%] w-24 lg:w-[20%] bg-blue-300 text-xs lg:text-2xl rounded-lg hover:bg-blue-400  duration-500 md:hover:text-3xl md:hover:scale-110 shadow-2xl shadow-sky-800 hover:shadow-2xl text-white   ">
-              {" "}
               <Link to={"/userlogin"}>USER</Link>
+              
             </button>
             <button className=" lg:h-[55%] w-24 lg:w-[20%] bg-blue-300 text-xs lg:text-2xl rounded-lg hover:bg-blue-400  duration-500 md:hover:text-3xl md:hover:scale-110 shadow-2xl shadow-sky-800 hover:shadow-2xl text-white    ">
-              <Link to={""}>TRAVELS</Link>
+              <Link to={"/travelslogin"}>TRAVELS</Link>
             </button>
           </div>
         </div>
