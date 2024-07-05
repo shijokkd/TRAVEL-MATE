@@ -1,21 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link , useNavigate} from "react-router-dom";
 import axiosInstance from "../../components/axiosInstance/AxiosInstance";
 
 function TreavelsLogin() {
+  const Navigat = useNavigate()
   const {register ,  handleSubmit , formState:{errors}}= useForm()
+  const [error1 , setError1]= useState()
   const onsubmit = async (data)=>{
     try{
-      await axiosInstance.post("/userlogin",data)
+      
+      await axiosInstance.post("/travelslogin",data)
+      Navigat("/travelshome")
+
 
     }catch(error){
       console.log(error);
-    }
+      setError1(error.response.data.message)
 
+    }
       
   }
-
+ 
 
   return (
     <>
@@ -28,6 +34,7 @@ function TreavelsLogin() {
               <h1 className=" text-xl mb-6 md:text-4xl text-blue-600 font-serif  ">
                 <u> TRAVELS LOGIN </u>
               </h1>
+              <span className="text-red-400">{error1}</span>
               <label htmlFor="" className="label1  ">
               {errors.name  ? <span className=" text-red-500"> {errors.name.message}</span> : <span> Travels Name</span> }
                 
