@@ -26,6 +26,7 @@ function UserSignup() {
 
       console.log(error.response.data.message);
       setError(error.response.data.message)
+      
 
     
 
